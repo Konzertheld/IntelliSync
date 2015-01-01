@@ -1,0 +1,70 @@
+﻿<Window x:Class="GUI.example"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="example" Height="385" Width="690">
+    <Window.Resources>
+        <!--xml data-->
+        <XmlDataProvider x:Key="MyData" XPath="/Info/Item">
+            <x:XData>
+                <Info xmlns="">
+                    <Item Path="\\Musik\\Test.ogg" Info="" ActionString="Keine Aktion" />
+                    <Item Path="\\Musik\\Teest.ogg" Info="" ActionString="Keine Aktion" />
+                    <Item Path="\\Musik\\Test3.ogg" Info="" ActionString="Aktualisieren" />
+                    <Item Path="\\Musik\\Test5.ogg" Info="\\Musik\\bla.ogg" ActionString="Verschieben" />
+                    <Item Path="\\Musik\\Test6.ogg" Info="" ActionString="Aktualisieren" />
+                    <Item Path="\\Musik\\Test99.ogg" Info="" ActionString="Löschen" />
+                    <Item Path="\\Musik\\Testkill.ogg" Info="" ActionString="Löschen" />
+                </Info>
+            </x:XData>
+        </XmlDataProvider>
+        <!--CollectionViewSource-->
+        <CollectionViewSource x:Key='src' Source="{Binding Source={StaticResource MyData}}">
+            <CollectionViewSource.GroupDescriptions>
+                <PropertyGroupDescription PropertyName="@ActionString" />
+            </CollectionViewSource.GroupDescriptions>
+        </CollectionViewSource>
+    </Window.Resources>
+
+    <Grid>
+        <ListView ItemsSource='{Binding Source={StaticResource src}}' BorderThickness="0">
+            <ListView.GroupStyle>
+                <!--ObservableCollection<GroupStyle>-->
+                <GroupStyle>
+                    <GroupStyle.ContainerStyle>
+                        <Style TargetType="{x:Type GroupItem}">
+                            <Setter Property="Margin" Value="0,0,0,5"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type GroupItem}">
+                                        <Expander IsExpanded="True"
+                                              BorderBrush="#FFA4B97F"
+                                              BorderThickness="0,0,0,1">
+                                            <Expander.Header>
+                                                <DockPanel>
+                                                    <TextBlock FontWeight="Bold" Text="{Binding Path=Name}"
+                                   Margin="5,0,0,0" Width="100"/>
+                                                    <TextBlock FontWeight="Bold"
+                                   Text="{Binding Path=ItemCount}"/>
+                                                </DockPanel>
+                                            </Expander.Header>
+                                            <Expander.Content>
+                                                <ItemsPresenter />
+                                            </Expander.Content>
+                                        </Expander>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </GroupStyle.ContainerStyle>
+                </GroupStyle>
+            </ListView.GroupStyle>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Pfad" DisplayMemberBinding="{Binding XPath=@Path}" />
+                    <GridViewColumn Header="Aktion" DisplayMemberBinding="{Binding XPath=@ActionString}" />
+                    <GridViewColumn Header="Info" DisplayMemberBinding="{Binding XPath=@Info}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

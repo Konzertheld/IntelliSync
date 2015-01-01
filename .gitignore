@@ -1,0 +1,7 @@
+GUI/bin/*
+GUI/obj/*
+CLI/bin/*
+CLI/obj/*
+Core/bin/*
+Core/obj/*
+*.suo

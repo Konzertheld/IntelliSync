@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="358BF88AEA2C0D59">
+  <PROJECT FORMAT="1.00" NAME="Dateierkennung" AUTHOR="Christian" CREATED="2011.03.27 23:15:46" MODIFIED="2011.11.15 03:33:29">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Datei" CREATED="2011.03.27 23:15:52" MODIFIED="2011.11.15 03:33:29">
+        <LAYOUT FORMAT="1.00" COLUMNS="12" ROWS="13">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="218">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="9">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="146">
+                <TEXT><![CDATA[Die Datei wurde verändert]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="10">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="151">
+                <TEXT><![CDATA[Dateiänderung ohne Änderung des Datums: z.B. bei Stapelverarbeitung mit XnView]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="148">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="226">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="9">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="66">
+                <TEXT><![CDATA[Die Datei wurde umbenannt oder verschoben]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="10">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="110">
+                <TEXT><![CDATA[Eine bereits vorhandene Datei hat eine andere ersetzt.]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="230">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="8">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="215">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="9">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="160">
+                <TEXT><![CDATA[Die Datei wurde umbenannt oder verschoben]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="10">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="165">
+                <TEXT><![CDATA[Es gab zwei Dateien gleicher Größe, gleichen Erstell- und Veränderungsdatums. Die eine wurde durch die andere ersetzt.]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="157">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="3" ROW="6">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="141">
+                <TEXT><![CDATA[Hash in DB vorhanden?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="3" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="225">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="3" ROW="8">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="153">
+                <TEXT><![CDATA[Hash in DB vorhanden?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="3" ROW="9">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="155">
+                <TEXT><![CDATA[Die Datei ist neu]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="3" ROW="10">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="152">
+                <TEXT><![CDATA[Tja, Sachen gibt's... eine Datei, die die gleiche Größe hat wie eine andere und gleichzeitig mit dieser erstellt und ggf. verändert wurde und deren Inhalt dennoch anders ist, hat die andere Datei ersetzt.]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="3" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="211">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="4" ROW="6">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="134">
+                <TEXT><![CDATA[CRC-Dateigröße-Hash berechnen]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="4" ROW="7">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="111">
+                <TEXT><![CDATA[CRC-Dateigröße-Hash berechnen]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="4" ROW="8">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="122">
+                <TEXT><![CDATA[Hash identisch?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="4" ROW="10">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="123">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="5" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Datei]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="5" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="5" ROW="2">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Datei aus neu eingelesener Liste]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="5" ROW="3">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Ist bereits eine Datei mit diesem Dateipfad vorhanden?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="5" ROW="4">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[Ist das Änderungsdatum identisch?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="5" ROW="6">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="127">
+                <TEXT><![CDATA[Ist die Dateigröße identisch?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="5" ROW="7">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="14">
+                <TEXT><![CDATA[Hat der Benutzer (für das zuständige Plugin) angefordert, dass trotzdem der Inhalt überprüft wird?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="5" ROW="10">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="22">
+                <TEXT><![CDATA[Die Datei wird als unverändert angenommen.]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="5" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="43">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="5" ROW="12">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="6" ROW="4">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="91">
+                <TEXT><![CDATA[CRC-Dateigröße-Hash berechnen]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="6" ROW="5">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="174">
+                <TEXT><![CDATA[Neuer Hash = alter Hash?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="6" ROW="6">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="176">
+                <TEXT><![CDATA[Neuer Hash in DB?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="6" ROW="7">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="101">
+                <TEXT><![CDATA[Die Datei wurde geändert]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="6" ROW="8">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="108">
+                <TEXT><![CDATA[ganz gewöhnliche Dateiänderung]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="6" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="189">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="7" ROW="6">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="195">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="7" ROW="7">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="178">
+                <TEXT><![CDATA[Die Datei wurde umbenannt oder verschoben]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="7" ROW="8">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="181">
+                <TEXT><![CDATA[Eine bereits vorhandene Datei hat eine andere ersetzt.]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="7" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="198">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="8" ROW="5">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="192">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="8" ROW="7">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="207">
+                <TEXT><![CDATA[Die Datei wird als unverändert angenommen.]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="8" ROW="8">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="107">
+                <TEXT><![CDATA[Jemand hat irgendwie das Änderungsdatum getriggert, obwohl der Inhalt nicht geändert wurde. Access tut das manchmal.]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="8" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="104">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="9" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="183">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="10" ROW="3">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="16">
+                <TEXT><![CDATA[CRC-Dateigröße-Hash berechnen]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="10" ROW="4">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="20">
+                <TEXT><![CDATA[Hash in DB vorhanden?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="10" ROW="7">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="29">
+                <TEXT><![CDATA[Die Datei wurde umbenannt oder verschoben]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="10" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="119">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="11" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="204">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="11" ROW="7">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="55">
+                <TEXT><![CDATA[Die Datei ist neu.]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="11" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="201">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="11" FROM="10" TO="127" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="15" FROM="14" TO="22" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="190" FROM="189" TO="43" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="173" FROM="4" TO="16" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="10" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="203" FROM="55" TO="201" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="49" FROM="43" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="208" FROM="207" TO="104" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="23" FROM="22" TO="43" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="25" FROM="20" TO="29" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="205" FROM="20" TO="204" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="206" FROM="204" TO="55" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="121" FROM="29" TO="119" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="202" FROM="201" TO="119" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="227" FROM="141" TO="225" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="212" FROM="211" TO="43" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="115" FROM="16" TO="20" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="186" FROM="174" TO="176" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="194" FROM="192" TO="207" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="95" FROM="10" TO="91" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="94" FROM="91" TO="174" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="193" FROM="174" TO="192" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="191" FROM="101" TO="189" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="184" FROM="183" TO="104" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="199" FROM="198" TO="189" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="214" FROM="160" TO="157" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="125" FROM="123" TO="22" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="168" FROM="14" TO="111" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="128" FROM="127" TO="14" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="231" FROM="230" TO="157" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="209" FROM="122" TO="123" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="156" FROM="153" TO="155" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="135" FROM="127" TO="134" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="142" FROM="134" TO="141" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="149" FROM="148" TO="230" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="229" FROM="226" TO="66" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="219" FROM="141" TO="218" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="150" FROM="146" TO="148" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="213" FROM="155" TO="211" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="210" FROM="122" TO="153" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="217" FROM="215" TO="160" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="158" FROM="157" TO="211" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="216" FROM="153" TO="215" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="120" FROM="119" TO="183" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="187" FROM="176" TO="101" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="196" FROM="176" TO="195" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="197" FROM="195" TO="178" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="105" FROM="104" TO="198" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="200" FROM="178" TO="198" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="220" FROM="218" TO="146" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="228" FROM="225" TO="226" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="224" FROM="111" TO="122" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="232" FROM="66" TO="230" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>
