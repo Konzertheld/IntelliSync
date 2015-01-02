@@ -1,3 +1,0 @@
-﻿Aktionen aus Dateien erstellen
-Hashes via LAN von anderem Rechner anfordern
-Einen Hash aus standardisierten (kleingeschriebenen, von Leer- und Sonderzeichen befreiten) Tags erstellen, um auch metaidentische Dateien zu finden
