@@ -17,6 +17,7 @@ namespace IntelliSync
 
 		public Snapshot(string path)
 		{
+			// Make sure database file exists, open it and make sure table exists
 			System.IO.Directory.CreateDirectory(System.IO.Path.GetDirectoryName(path));
 			if (!System.IO.File.Exists(path))
 				System.IO.File.Create(path).Close();
