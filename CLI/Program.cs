@@ -54,7 +54,7 @@ namespace IntelliSync.Analyzer
 		private static void Compare(string snapshot, string folder, string outputpath)
 		{
 			FolderCompare fc = new FolderCompare(new Snapshot(snapshot), folder);
-			fc.Compare();
+			fc.CompareAgainstFolder();
 
 			// Process results
 			using (StreamWriter sw = new StreamWriter(new FileStream(outputpath, FileMode.Create))) {

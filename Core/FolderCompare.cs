@@ -24,7 +24,7 @@ namespace IntelliSync
 		// Options go here
 
 		/// <summary>
-		/// Create a new object for comparing two folders.
+		/// Create a new object for comparing a folder snapshot against a folder.
 		/// </summary>
 		/// <param name="left">Old path</param>
 		/// <param name="right">New path</param>
@@ -36,10 +36,7 @@ namespace IntelliSync
 			ResultNew = new Dictionary<string, FileStatusInformation>();
 		}
 
-		/// <summary>
-		/// Compare. B is considered the newer one. For syncing, B should be the source and A should be the target.
-		/// </summary>
-		public void Compare()
+		public void CompareAgainstFolder()
 		{
 			// Reset the results.
 			ResultUpdates = new Dictionary<string, FileObject>();
