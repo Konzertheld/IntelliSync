@@ -153,6 +153,13 @@ namespace IntelliSync
 				}
 			}
 
+			// Last step: Check unidentified files in the snapshot (most likely, deleted files)
+			foreach (KeyValuePair<string, FileObject> kvp in filesSnapshot) {
+				if (kvp.Value.StatusInformation.Status == FILESTATUS.Unknown) {
+					// TODO: 
+				}
+			}
+
 			ResultUpdates = filesSnapshot;
 			ResultNew = newFiles;
 		}
